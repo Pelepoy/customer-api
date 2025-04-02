@@ -1,7 +1,7 @@
 # 📦 Customer API with Laravel & Doctrine
 ## Documentation
 
-A robust API for importing and managing customer data with **Australian nationality filtering** and **secure password hashing**.
+A robust API for importing and managing customer data from [randomuser.me](https://randomuser.me) with Australian nationality filtering.
 
 ## Run Locally
 
@@ -28,6 +28,11 @@ A robust API for importing and managing customer data with **Australian national
 
 ### Importer
 ```bash
+  Configuration .env
+  RANDOM_USER_API_URL=https://randomuser.me/api
+  REQUIRED_NATIONALITY=AU
+  DEFAULT_RESULTS=100
+
   php artisan customers:import (default value 100 results, AU nationality)
 
   php artisan customers:import --count=100 --nationality=AU
