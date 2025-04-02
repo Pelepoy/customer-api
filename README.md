@@ -41,7 +41,7 @@ A robust API for importing and managing customer data from [randomuser.me](https
 ### API Reference
 
 ```http
-  GET /api/customers
+@GET /api/customers
 ```
 ```http
   Sample Result
@@ -63,7 +63,7 @@ A robust API for importing and managing customer data from [randomuser.me](https
 
 #### Get customer details
 ```http
-  /api/customers/{customerId}
+@GET /api/customers/{customerId}
 ```
 ```http
  Sample Result
