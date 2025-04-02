@@ -25,6 +25,10 @@ A robust API for importing and managing customer data from [randomuser.me](https
 
   php artisan doctrine:schema:create
 ```
+### Run the project
+```bash
+ php artisan serve
+```
 
 ### Importer
 ```bash
