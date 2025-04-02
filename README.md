@@ -1,4 +1,4 @@
-# 📦 Customer API with Laravel & Doctrine
+# 📦 Customer API and Importer with Laravel & Doctrine
 ## Documentation
 
 A robust API for importing and managing customer data from [randomuser.me](https://randomuser.me) with Australian nationality filtering.
