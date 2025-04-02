@@ -19,7 +19,7 @@ A robust API for importing and managing customer data with **Australian national
   CREATE DATABASE `customers-db`
   -------------------------------
   DB_CONNECTION=mysql
-  DB_DATABASE=customer_db
+  DB_DATABASE=customers_db
   DB_USERNAME=root
   DB_PASSWORD=your_password
 
