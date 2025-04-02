@@ -14,7 +14,7 @@ class RandomUserApiService implements RandomUserApiClient
         private int $defaultResults
     ) {}
 
-    public function fetchUsers(int $count = null, string $nationality = null): array
+    public function fetchUsers(?int $count = null, ?string $nationality = null): array
     {
         $response = Http::get($this->baseUrl, [
             'results' => $count ?? $this->defaultResults,

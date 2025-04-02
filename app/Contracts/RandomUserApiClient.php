@@ -4,5 +4,5 @@ namespace App\Contracts;
 
 interface RandomUserApiClient
 {
-    public function fetchUsers(int $count, string $nationality): array;
+    public function fetchUsers(?int $count = null, ?string $nationality = null): array;
 }
