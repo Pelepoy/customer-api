@@ -8,23 +8,24 @@ use App\Repositories\DoctrineCustomerRepository;
 use App\Services\CustomerImportService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Mockery;
+use Mockery\MockInterface;
 use Tests\TestCase;
 
 class CustomerImportServiceTest extends TestCase
 {
     use RefreshDatabase;
 
-    private $apiClient;
-    private $repository;
-    private $importService;
+    private MockInterface|RandomUserApiClient $apiClient;
+    private MockInterface|DoctrineCustomerRepository $repository;
+    private CustomerImportService $importService;
 
     protected function setUp(): void
     {
         parent::setUp();
 
         // Mock dependencies
-        $this->apiClient = Mockery::mock('alias:' . RandomUserApiClient::class);
-        $this->repository = Mockery::mock('alias:' . DoctrineCustomerRepository::class);
+        $this->apiClient = Mockery::mock(RandomUserApiClient::class);
+        $this->repository = Mockery::mock(DoctrineCustomerRepository::class);
         $this->importService = new CustomerImportService($this->apiClient, $this->repository);
     }
 
