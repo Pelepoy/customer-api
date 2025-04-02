@@ -107,7 +107,7 @@ php artisan test --testsuit=Feature // API tests
 ✅ Strict Requirements Met:
 
 - Doctrine ORM with minimal customers table
-- Config-driven API parameters
+- Config-driven parameters
 - MD5 password hashing
 - Reusable import service
 - Complete test coverage
